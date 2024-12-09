@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background color (change this to your preferred color) -->
+    <solid
+        android:color="#f44336"/> <!-- Grey background for the buttons -->
+
+    <!-- Rounded corners -->
+    <corners
+        android:radius="16dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp" /> <!-- Rounded corners with 16dp radius -->
+</shape>
+
+

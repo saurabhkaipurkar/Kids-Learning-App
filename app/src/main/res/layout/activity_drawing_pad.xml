@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context=".drawingPad">
+
+    <FrameLayout
+        android:id="@+id/drawing_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:columnCount="4"
+            android:padding="8dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Example Button -->
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:ellipsize="none"
+                android:maxLines="1"
+                android:minWidth="100dp"
+                android:minHeight="80dp"
+                android:text="RED"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_red"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Green"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_green"
+                android:textColor="#FFFFFF" />
+
+            <!-- Blue Button -->
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Blue"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="#FFFFFF" />
+
+            <!-- Yellow Button -->
+            <Button
+                android:id="@+id/btnYellow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="none"
+                android:textColorHint="#FFFF00"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Yellow"
+                android:textSize="11sp"
+                android:backgroundTint="#FFFF00"
+                android:textColor="#000000" />
+
+            <!-- Purple Button -->
+            <Button
+                android:id="@+id/btnPurple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Purple"
+                android:textSize="11sp"
+                android:backgroundTint="#800080"
+                android:textColor="#FFFFFF" />
+
+            <!-- Cyan Button -->
+            <Button
+                android:id="@+id/btnCyan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Cyan"
+                android:textSize="11sp"
+                android:backgroundTint="#00FFFF"
+                android:textColor="#000000" />
+
+            <!-- Magenta Button -->
+            <Button
+                android:id="@+id/btnMagenta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Magenta"
+                android:textSize="11sp"
+                android:backgroundTint="#FF00FF"
+                android:textColor="#FFFFFF" />
+
+            <!-- Orange Button -->
+            <Button
+                android:id="@+id/btnOrange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Orange"
+                android:textSize="11sp"
+                android:backgroundTint="#FFA500"
+                android:textColor="#FFFFFF" />
+
+            <!-- Brown Button -->
+            <Button
+                android:id="@+id/btnBrown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Brown"
+                android:textSize="11sp"
+                android:backgroundTint="#8B4513"
+                android:textColor="#FFFFFF" />
+
+            <!-- Black Button -->
+            <Button
+                android:id="@+id/btnBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Black"
+                android:textSize="11sp"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+
+            <!-- Clear Button -->
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:singleLine="true"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:text="Clear"
+                android:textSize="11sp"
+                android:backgroundTint="#A0A0A0"
+                android:textColor="#000000" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
