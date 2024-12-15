@@ -13,9 +13,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:padding="16dp">
 
@@ -36,6 +37,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/dog"
+                android:contentDescription="TODO"
                 app:layout_constraintEnd_toStartOf="@+id/cat"
                 app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,6 +86,7 @@
                 android:background="@drawable/lion"
                 android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintEnd_toEndOf="@+id/elephant"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/elephant"
@@ -96,6 +99,7 @@
                 android:background="@drawable/snake"
                 android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintBottom_toTopOf="@+id/textView3"
                 app:layout_constraintEnd_toEndOf="@+id/monkey"
                 app:layout_constraintStart_toStartOf="@+id/monkey"
@@ -197,8 +201,8 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/fox"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintEnd_toEndOf="@+id/bull"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/bull"
@@ -209,8 +213,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:background="@drawable/zebra"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/lion"
                 app:layout_constraintTop_toTopOf="@+id/fox" />
 
@@ -228,8 +232,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:background="@drawable/goat"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/snake"
                 app:layout_constraintTop_toTopOf="@+id/zebbra" />
 
@@ -239,8 +243,8 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/gorilla"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintEnd_toEndOf="@+id/giraffe"
                 app:layout_constraintStart_toStartOf="@+id/giraffe"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -252,6 +256,7 @@
                 android:background="@drawable/alligator"
                 android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/donkey"
                 app:layout_constraintTop_toTopOf="@+id/gorilla" />
 
@@ -260,8 +265,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:background="@drawable/crow"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/eagle"
                 app:layout_constraintTop_toTopOf="@+id/Alligator" />
 
@@ -271,8 +276,9 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/giraffe"
-                android:clickable="true"
-                android:contentDescription="TODO" app:layout_constraintEnd_toEndOf="@+id/fox"
+                android:contentDescription="TODO"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="@+id/fox"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/fox"
                 app:layout_constraintTop_toBottomOf="@+id/fox" />
@@ -282,8 +288,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:background="@drawable/donkey"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/zebbra"
                 app:layout_constraintTop_toTopOf="@+id/giraffe" />
 
@@ -292,8 +298,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:background="@drawable/eagle"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintStart_toStartOf="@+id/goat"
                 app:layout_constraintTop_toTopOf="@+id/donkey" />
 
@@ -303,8 +309,8 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/bull"
-                android:clickable="true"
                 android:contentDescription="TODO"
+                android:focusable="true"
                 app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toStartOf="@+id/tiger"
                 app:layout_constraintTop_toBottomOf="@+id/tiger" />
@@ -324,7 +330,8 @@
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/monkey"
-                android:contentDescription="TODO" app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/elephant"
                 app:layout_constraintTop_toTopOf="@+id/tiger" />
 
